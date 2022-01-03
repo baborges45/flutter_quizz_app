@@ -3,8 +3,8 @@ import 'package:flutter_quizz_app/models/question_model.dart';
 
 abstract class BaseQuizRepository {
   Future<List<QuestionModel>> getQuestions({
-    int numQuestions,
-    int categoryId,
-    Difficulty difficulty,
+    required int numQuestions,
+    required int categoryId,
+    required Difficulty difficulty,
   });
 }
